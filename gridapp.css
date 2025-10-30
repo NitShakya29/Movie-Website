@@ -1,0 +1,137 @@
+/* defining styles for grid application */
+:root {
+    --bg: #222; /* background color */
+    --btm: 4%; /* bottom margin */
+}
+.body{
+    background: #111;
+    margin: 0;
+}
+/* header styles */
+.header {
+    background:var(--bg); /* var calling */
+    padding: 15px 40px;
+    margin-bottom:ver(--btm);
+}
+.header img {
+    width: 180px;
+    height: 50px;
+ 
+}
+@keyframes moving {
+    0%{ transform: translate(1px, 1px);}
+    25%{ transform: translate(350px, 1px);} 
+    
+}
+h1{
+    color:#FFF;
+    font-size: 50px;
+    margin: 2px;
+    display: inline-block;
+    animation: moving 15s;
+    text-align: center; 
+    
+}
+
+/* aritcle styles */
+.slogon {
+    text-align: center;
+    margin-bottom: var(--btm);
+    div{
+        color:#fff;
+        font-size: 2.5em;
+        font-family: 'Arial Rounded MT';
+    }
+    div:first-letter {
+        background: yellow;
+        color: #000;
+        padding: 0px 8px;
+        
+    }
+    h2{
+        color: #fff;
+        font-size: 48px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    p{
+        color: #EEE;
+        font-size: 18px;
+    }
+}
+/* search box styles */
+.search{
+  background:var(--bg);
+  color:#FFF;  
+  text-align:center;
+  margin:auto;  
+  margin-bottom:var(--btm);
+  width:70%;
+  padding:25px 0;
+  div:first-child{
+	font-family:'Arial Rounded MT';
+  }
+  div{
+	margin-bottom:15px;
+  }
+  .search-box
+  {
+    border-radius:15px;
+	background:yellow;
+	display:inline-block;
+	padding-right:10px;
+      input{
+	    background:#111;
+	    color:#FFF;
+	    border:none;
+	    outline:none;
+	    font-size:18px;
+      }
+      button{
+	    background:yellow;
+	    border:none;
+	    outline:none;
+      }
+  }
+}
+/* footer styles */
+.footer {
+    background: var(--bg);
+    color: #FFF;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* grid box styles */
+.grid-box{
+    display:grid; /*N-row X 1-column grid */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* 5-column grid */
+    grid-template-rows: 400px 400px 400px 400px; /* 4-row grid */
+    grid-gap:20px 30px;
+    width:90%;
+    margin:auto;
+    margin-bottom: var(--btm);
+}
+.grid-item{
+    img{
+        width:100%;
+        height:320%;
+        object-fit:cover;
+    }
+    a{
+        color:#FFF;
+        text-decoration:none;
+        font-size:20px;
+        text-align: center;
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+    div:last-child{
+        color:cyan;
+    }
+    &:hover{
+        filter:grayscale(130%);
+    }
+    
+}
