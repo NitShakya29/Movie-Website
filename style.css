@@ -20,7 +20,7 @@
 }
 @keyframes moving {
     0%{ transform: translate(1px, 1px);}
-    25%{ transform: translate(350px, 1px);} 
+    25%{ transform: translate(340px, 1px);} 
     
 }
 h1{
@@ -28,7 +28,7 @@ h1{
     font-size: 50px;
     margin: 2px;
     display: inline-block;
-    animation: moving 15s;
+    animation: moving 10s;
     text-align: center; 
     
 }
@@ -135,3 +135,4 @@ h1{
     }
     
 }
+
